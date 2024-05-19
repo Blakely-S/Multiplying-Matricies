@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 from flask import Flask, request, render_template 
   
 # Flask constructor
@@ -14,3 +15,17 @@ def cool_math():
     return render_template("index.html")
 if __name__=='__main__':
    app.run()
+   
+m1 = input("insert first matrix here:")
+try: 
+    print(int(m1))
+except:
+    print("Please insert numbers only") 
+
+
+m2 = input("insert second matrix here:")
+try:
+    print(int(m2))
+except:
+    print("Please insert numbners only")
+>>>>>>> dd84ab9d501b58c620de8effbb12f9dda9dd5dfc
