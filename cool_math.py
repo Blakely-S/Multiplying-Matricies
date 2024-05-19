@@ -9,7 +9,6 @@ app = Flask(__name__)
 @app.route('/cool_math.py', methods =["GET", "POST"])
 def cool_math():
     if request.method == "POST":
-       # getting input with freq = set_freq in HTML form
        matricies = request.form.get("matrix1")
        return "Your freq value is " + matrix
     return render_template("index.html")
